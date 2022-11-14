@@ -27,7 +27,7 @@ function onSubmitClick(event) {
     amountEl: Number(formData.amount.value)
   }
   
-  for (position = 1; position <= formEL.amountEl; position++){
+  for (let position = 1; position <= formEL.amountEl; position++){
   const delay = formEL.delayEl + formEL.stepEl * (position - 1);
   createPromise(position, delay)
   .then(({ position, delay }) => {
