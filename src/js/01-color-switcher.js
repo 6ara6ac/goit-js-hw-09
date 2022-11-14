@@ -11,7 +11,7 @@ dataStop.addEventListener('click', onRemoveColor)
 let timerID = 'null'
 
 function getRandomHexColor() {
-   timerID = setInterval (() => {evt = `#${Math.floor(Math.random() * 16777215)
+   timerID = setInterval (() => {let evt = `#${Math.floor(Math.random() * 16777215)
         .toString(16)}`;
      body.style.backgroundColor = evt;
      dataStart.setAttribute('disabled',true)
